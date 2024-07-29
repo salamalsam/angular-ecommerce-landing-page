@@ -1,0 +1,29 @@
+.nav li{
+    margin-left:25px;
+    margin-right:25px;
+}
+.header-menu-items {
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+.header-menu-items:hover {
+    color: var(--cs-primary);
+}
+.header-menu-items:last-child {
+    margin-right: 0px;
+}
+.nav-link{
+    color: var(--bs-dark) !important;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: var(--cs-primary) !important;
+}
+@media screen and (max-width: 768px) {
+    .nav li{
+        margin-left:12px;
+        margin-right:12px;
+    }
+}

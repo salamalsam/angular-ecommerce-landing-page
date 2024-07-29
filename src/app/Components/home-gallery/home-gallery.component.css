@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700");
+
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'item1 item1 item2 item3'
+                         'item4 item4 item2 item5'
+                         'item4 item4 item2 item6';
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 12rem;
+    cursor: pointer;
+    background: red;
+}
+
+.item1 {
+    grid-area: item1;
+    background: #4b00ff url(/bedroom.jpg);
+}
+.item2 {
+    grid-area: item2;
+    background: #4b00ff url(/dining.jpeg); 
+}
+.item3 {
+    grid-area: item3;
+    background: #4b00ff url(/banner.jpeg); 
+}
+.item4 {
+    grid-area: item4;
+    background: #4b00ff url(/living.jpeg); 
+}
+.item5 {
+    grid-area: item5;
+    background: #4b00ff url(/bedroom.jpg);
+}
+.item6 {
+    grid-area: item6;
+    background: #4b00ff url(/banner.jpeg);
+}
+
+
+@media (max-width: 768px) {
+    .grid-gallery { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "item1 item1 item2"
+                             "item3 item4 item2"
+                             "item5 item6 item2";
+    }
+}
+
+@media (max-width: 620px) {
+    .grid-gallery { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "item1 item3"
+                             "item2 item4"
+                             "item2 item5" 
+                             "item2 item6";
+    }
+}
+
+
+@media (max-width: 360px) {
+    .grid-gallery { 
+        grid-template-columns: 1fr;
+        grid-template-areas: "item1"
+                             "item2"
+                             "item3" 
+                             "item4"
+                             "item5"
+                             "item6";
+    }
+    .item2 {
+        background-position: top;
+    }
+}

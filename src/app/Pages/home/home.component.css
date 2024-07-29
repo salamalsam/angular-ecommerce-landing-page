@@ -1,0 +1,60 @@
+.banner-container{
+    height: 70vh;
+    background-image: url('/banner.jpeg');
+    background-size: cover; /* Adjust the size as needed */
+    background-position: center;
+}
+.banner-content-wrapper{
+    padding: 10% 10%;
+    background-color: var(--bs-warning-light);
+}
+.banner-content-wrapper .title{
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--cs-primary);
+}
+.banner-content-wrapper .subtitle{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}    
+.banner-content-wrapper .description{
+    font-size: 18px;
+    padding-bottom: 20px;
+}    
+.range-image{
+    height: 485px;
+    width: 100%;
+    object-fit: cover;
+}
+.range-types div h4{
+    padding: 14px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container{
+        height: 60vh;
+    }
+    .banner-content-wrapper{
+        padding: 8% 8%;
+    }
+    .banner-content-wrapper .title{
+        font-size: 32px;
+    }
+    .banner-content-wrapper .subtitle{
+        font-size: 14px;
+        padding-bottom: 8px;
+    }    
+    .banner-content-wrapper .description{
+        font-size: 14px;
+        padding-bottom: 12px;
+    }    
+    .range-image{
+        height: 355px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .range-types div h4{
+        padding: 14px 0;
+    }
+}
